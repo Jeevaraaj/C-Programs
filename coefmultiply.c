@@ -236,7 +236,7 @@ void do_multiply(struct term exp1_term,struct term exp2_term,struct term* res_te
     res_term->no_of_var=c;
 
 
-   for(int i=0;i<res_term->no_of_var && res_term->no_of_var >1;i++){
+    for(int i=0;i<res_term->no_of_var && res_term->no_of_var >1;i++){
         char temp;int pow_temp;
         for(int j=i+1;j<res_term->no_of_var;j++){
             if(res_term->var[i] > res_term->var[j]){
